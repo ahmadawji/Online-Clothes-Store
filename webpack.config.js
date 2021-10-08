@@ -14,6 +14,7 @@ module.exports = {
     hotUpdateChunkFilename: "hot/hot-update.js",
     hotUpdateMainFilename: "hot/hot-update.json",
     assetModuleFilename: "images/[hash][ext][query]",
+    assetModuleFilename: "fonts/[hash][ext][query]",
   },
   mode: "development",
   devServer: {
@@ -30,8 +31,7 @@ module.exports = {
   },
 
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.html$/i,
         loader: "html-loader",
         options: {
@@ -44,6 +44,10 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(svg|eot|woff|woff2|ttf)$/,
         type: "asset/resource",
       },
     ],
