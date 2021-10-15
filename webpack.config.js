@@ -13,8 +13,7 @@ module.exports = {
     filename: "main.js",
     hotUpdateChunkFilename: "hot/hot-update.js",
     hotUpdateMainFilename: "hot/hot-update.json",
-    assetModuleFilename: "images/[hash][ext][query]",
-    assetModuleFilename: "fonts/[hash][ext][query]",
+    assetModuleFilename: 'assets/[hash][ext][query]'
   },
   mode: "development",
   devServer: {
@@ -43,12 +42,18 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.(png|svg|jpe?g|gif)$/,
+        test: /\.(png|jpe?g|gif)$/,
         type: "asset/resource",
+        generator: {
+          filename: './assets/images/[hash][ext][query]'
+        }
       },
       {
-        test: /\.(svg|eot|woff|woff2|ttf)$/,
+        test: /\.(eot|woff|woff2|ttf)$/,
         type: "asset/resource",
+        generator: {
+          filename: './assets/fonts/[hash][ext][query]'
+        }
       },
     ],
   },

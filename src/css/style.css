@@ -16,8 +16,13 @@ body {
   color: #555555;
 }
 
+.navbar-brand {
+  background-color: #ff3956;
+  border-radius: 50%;
+}
+
 .navbar .navbar-header .navbar-brand img {
-  width: 70px;
+  width: 60px;
 }
 
 .custom-navbar {
@@ -152,6 +157,103 @@ body {
 
 }
 
+#carousel-featured {
+  background-color: #F7F8F3;
+  height: 400px;
+}
+
+#carousel-featured .carousel-item img {
+  height: 375px;
+}
+
+#carousel-featured .product-details {
+  border: 1px solid #DDDDDB;
+  padding: 20px;
+  position: relative;
+  height: 220px;
+  top: 50px;
+}
+
+#carousel-featured .product-details .product-category {
+  border: 1px solid #DDDDDB;
+  background-color: #F7F8F3;
+  padding: 10px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+#carousel-featured .product-details .custom-btn-primary {
+  color: #F8AD47;
+  border-color: #F8AD47;
+  height: auto;
+  background-color: transparent;
+  padding: 9px 25px;
+  margin-top: 15px;
+  font-size: 18px;
+  border-radius: 2px;
+
+}
+
+#carousel-featured .product-details .custom-btn-primary:hover {
+  background-color: #dadbd6;
+}
+
+#carousel-featured .product-details .sale {
+  background-color: #53ccd7;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  padding: 35px;
+}
+
+.sale.large {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  right: -15px;
+  top: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-25deg);
+  font-size: 130%;
+  line-height: 90%;
+}
+
+.carousel-indicators {
+  top: 276px;
+  right: 26% !important;
+}
+
+.carousel-indicators li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #DDDDDB;
+  background-color: #FFF;
+  margin-right: 2px;
+  display: flex;
+  opacity: 1 !important;
+}
+
+.carousel-indicators li.active {
+  border-color: #F8AD47;
+}
+
+.carousel-indicators li img {
+  width: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #868686;
+
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: #868686;
+}
 
 /* @media (min-width: 576px) {
   .form-inline label {
