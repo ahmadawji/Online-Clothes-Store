@@ -13,7 +13,7 @@ module.exports = {
     filename: "main.js",
     hotUpdateChunkFilename: "hot/hot-update.js",
     hotUpdateMainFilename: "hot/hot-update.json",
-    assetModuleFilename: 'assets/[hash][ext][query]'
+
   },
   mode: "development",
   devServer: {
@@ -38,21 +38,36 @@ module.exports = {
         },
       },
       {
+        test: require.resolve('jquery'),
+        loader: 'expose-loader',
+        options: {
+          exposes: ['$', 'jQuery'],
+        }
+
+      },
+      {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [{
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../'
+            }
+          },
+          'css-loader'
+        ]
       },
       {
         test: /\.(png|jpe?g|gif)$/,
         type: "asset/resource",
         generator: {
-          filename: './assets/images/[hash][ext][query]'
+          filename: './images/[hash][ext][query]'
         }
       },
       {
         test: /\.(eot|woff|woff2|ttf)$/,
         type: "asset/resource",
         generator: {
-          filename: './assets/fonts/[hash][ext][query]'
+          filename: './fonts/[hash][ext][query]'
         }
       },
     ],

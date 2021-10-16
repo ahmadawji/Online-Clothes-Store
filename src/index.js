@@ -11,4 +11,8 @@ $(function () {
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
     })
+
+    $('.add-to-cart-btn').click(function () {
+        alert('product added to cart!');
+    });
 });

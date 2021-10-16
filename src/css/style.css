@@ -168,7 +168,7 @@ body {
 
 #carousel-featured .product-details {
   border: 1px solid #DDDDDB;
-  padding: 20px;
+  padding: 30px 20px;
   position: relative;
   height: 220px;
   top: 50px;
@@ -199,7 +199,7 @@ body {
   background-color: #dadbd6;
 }
 
-#carousel-featured .product-details .sale {
+.sale {
   background-color: #53ccd7;
   color: white;
   font-weight: bold;
@@ -221,12 +221,12 @@ body {
   line-height: 90%;
 }
 
-.carousel-indicators {
+#carousel-featured .carousel-indicators {
   top: 276px;
   right: 26% !important;
 }
 
-.carousel-indicators li {
+#carousel-featured .carousel-indicators li {
   width: 80px;
   height: 80px;
   border: 2px solid #DDDDDB;
@@ -236,11 +236,11 @@ body {
   opacity: 1 !important;
 }
 
-.carousel-indicators li.active {
+#carousel-featured .carousel-indicators li.active {
   border-color: #F8AD47;
 }
 
-.carousel-indicators li img {
+#carousel-featured .carousel-indicators li img {
   width: 100%;
 }
 
@@ -253,6 +253,135 @@ body {
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   color: #868686;
+}
+
+#store-features {
+  box-shadow: 0 0 15px #eef0ea;
+  position: relative;
+  top: -30px;
+  background-color: #fff;
+  background-image: url('../images/bg_features.png');
+  background-repeat: no-repeat;
+  background-position: -15px -15px;
+  background-size: auto 60%;
+  padding-bottom: 35px;
+  padding-top: 25px;
+}
+
+#store-features .feature>img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#store-features .feature:nth-child(2) {
+  border-right: 1px solid #EEF0EA;
+  border-left: 1px solid #EEF0EA;
+}
+
+h3.custom-heading {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+#carousel-most-sold .carousel-item .card-body img {
+  width: 100%;
+  max-width: 250px;
+  height: 230px;
+}
+
+.custom-thumbnail {
+  border: 1px solid #EEF0EA;
+  padding: 8px;
+}
+
+.custom-thumbnail:hover {
+  border: 2px solid #53ccd7;
+  cursor: pointer;
+}
+
+.custom-thumbnail h4 {
+  font-size: 18px;
+
+}
+
+.custom-thumbnail .card-body {
+  padding: 9px;
+}
+
+.custom-thumbnail .card-body>div {
+  padding-top: 10px;
+}
+
+.price {
+  color: #53ccd7;
+}
+
+.rating {
+  color: #C2C2C2;
+}
+
+.rating .active {
+  color: #f3af41
+}
+
+.custom-thumbnail .overlay {
+  position: absolute;
+  background-color: rgba(83, 204, 215, .5);
+  width: calc(100%-34px);
+  /*34 is the value of card padding + card-body padding*/
+  height: 230px;
+  top: 17px;
+  left: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.custom-thumbnail .overlay:hover {
+  opacity: 1;
+}
+
+.custom-thumbnail .overlay .add-to-cart-btn {
+  background-color: #fff;
+  color: #53ccd7;
+  font-weight: bold;
+}
+
+.custom-thumbnail .add-to-cart-btn:hover,
+.custom-thumbnail .add-to-cart-btn:active,
+.custom-thumbnail .add-to-cart-btn:focus,
+.custom-thumbnail .add-to-cart-btn:active:focus,
+.custom-thumbnail .add-to-cart-btn:active:hover {
+  color: #000;
+  background-color: white;
+}
+
+.custom-thumbnail .sale {
+  padding: 5px 10px;
+  top: 14px;
+  left: 14px;
+}
+
+.custom-thumbnail .sale::before {
+  content: "-";
+}
+
+#carousel-most-sold .carousel-indicators {
+  position: static;
+  /*note: to remove position absolute from original and take it back to its default state*/
+}
+
+#carousel-most-sold .carousel-indicators>li {
+  height: 13px;
+  width: 13px;
+  margin: 2px;
+  background-color: #dbdbdb;
+}
+
+#carousel-most-sold .carousel-indicators>li.active {
+  background-color: #565656;
 }
 
 /* @media (min-width: 576px) {
