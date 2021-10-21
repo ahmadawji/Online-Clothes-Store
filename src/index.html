@@ -10,6 +10,7 @@
 
 <body>
     <div class="container-fluid">
+        <!-- Nav -->
         <div class="row">
             <nav class="navbar custom-navbar navbar-expand-lg">
                 <div class="container">
@@ -17,8 +18,16 @@
                         <a href="" class="navbar-brand">
                             <img src="./images/ABC_logo.png" alt="Arabi store's logo">
                         </a>
+                        <button class="navbar-toggler btn custom-btn btn-icon " type="button" data-toggle="collapse"
+                            data-target="#navbar-collapsed-menu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                        </button>
+                        <a href="checkout.html" id="btn-shoppingcart2" class="btn custom-btn btn-icon "
+                            data-toggle="tooltip" data-placement="bottom" title="Shopping Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
                     </div>
-                    <form action="" class="form-inline mr-auto">
+                    <form action="" class="form-inline ">
                         <div class="form-group">
                             <input type="search" class="form-control custom-form-control" placeholder="search...">
                             <div class="dropdown categories">
@@ -53,44 +62,48 @@
                                     </li>
                                 </ul>
                             </div>
+                            <button class="btn search-btn">Search</button>
                         </div>
-                        <button class="btn search-btn">Search</button>
                     </form>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link">Main Page</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link  dropdown-toggle" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store Categories</a>
-                            <ul class="dropdown-menu custom-dropdown-menu">
-                                <li>
-                                    <a href="#" class="dropdown-item">Men</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">Women</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">Kids</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="search.html" class="nav-link">Advanced Search</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="checkout.html" id="btn-shoppingcart" class="btn custom-btn btn-icon"
-                                data-toggle="tooltip" data-placement="bottom" title="Shopping Cart">
-                                <i class="fas fa-shopping-cart"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbar-collapsed-menu">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link">Main Page</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link  dropdown-toggle" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store
+                                    Categories</a>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">Men</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Women</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Kids</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="search.html" class="nav-link">Advanced Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact Us</a>
+                            </li>
+                            <li class="nav-item checkout">
+                                <a href="checkout.html" id="btn-shoppingcart1" class="btn custom-btn btn-icon"
+                                    data-toggle="tooltip" data-placement="bottom" title="Shopping Cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
+        <!-- Special Products -->
         <div class="row carousel-row ">
             <div class="col-12">
                 <div id="carousel-featured" class="carousel slide row" data-ride="carousel">
@@ -99,8 +112,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12 col-md-4 offset-lg-2 text-center">
-                                        <img src="./images/lacoste_1.jpg" alt="T-shirt for men from lacoste"
-                                            class="w-100">
+                                        <img src="./images/lacoste_1.jpg" alt="T-shirt for men from lacoste">
                                     </div>
                                     <div class="col-12 col-lg-5 col-md-8">
                                         <div class="product-details">
@@ -945,29 +957,66 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
+        <!-- footer -->
+        <div id="footer" class="row">
+            <div id="brand-logos" class="col-12 text-center">
+                <span>This store is an authorized agent for those major companies</span>
+                <div class="img-container">
+                    <img src="./images/polo.png" alt="polo">
+                    <img src="./images/adidas.png" alt="Addidas">
+                    <img src="./images/lacoste.png" alt="lacoste">
+                    <img src="./images/puma.png" alt="puma">
+                </div>
+            </div>
+            <div id="footer-nav" class="col-12 text-center">
+                <div class="footer-logo">
+                    <a href="./">
+                        <img src="./images/ABC_logo.png" alt="ABC">
+                    </a>
+                </div>
+                <div id="footer-nav-links" class="col-12">
+                    <a href=".">Main page</a>
+                    <a href="search.html">Advanced Search</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+
+                <div id="newsletter" class="col-6 offset-3">
+                    <form>
+                        <label for="footer-email">Sign up for email news letter</label>
+                        <br>
+                        <div class="input-group">
+                            <input type="email" name="email" id="footer-email" class="form-control custom-form-control "
+                                placeholder="email address" required>
+                            <button type="submit" class="btn custom-btn-primary2 ">Follow</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="footer-copyright-social col-12">
+                <div class="container">
+                    <div id="copyright" class="float-left">
+                        All rights reserved <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                    </div>
+                    <div id="social-icons" class="float-right">
+                        <a href="#">
+                            <i class="fab fa-facebook-square fa-lg"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter-square fa-lg"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <script type="text/html" src="{require('index.js')}"></script>

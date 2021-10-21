@@ -16,9 +16,9 @@ body {
   color: #555555;
 }
 
-.navbar-brand {
-  background-color: #ff3956;
-  border-radius: 50%;
+
+.navbar .navbar-header .navbar-brand {
+  margin-left: 20px;
 }
 
 .navbar .navbar-header .navbar-brand img {
@@ -159,7 +159,8 @@ body {
 
 #carousel-featured {
   background-color: #F7F8F3;
-  height: 400px;
+  /* height: 400px; */
+
 }
 
 #carousel-featured .carousel-item img {
@@ -224,6 +225,8 @@ body {
 #carousel-featured .carousel-indicators {
   top: 276px;
   right: 26% !important;
+  display: flex;
+
 }
 
 #carousel-featured .carousel-indicators li {
@@ -464,11 +467,201 @@ h3.custom-heading {
   padding-top: 25px;
 }
 
-/* @media (min-width: 576px) {
-  .form-inline label {
-    -ms-flex-align: center;
-    -ms-flex-pack: center;
-    justify-content: left;
-    margin-left: 10px;
+#brand-logos {
+  background-color: #bdeefa;
+  padding: 25px 0;
+  color: #555555;
+}
+
+#brand-logos .img-container img {
+  margin-left: 25px;
+  margin-right: 25px;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+#footer-nav {
+  background-color: #1f1e1e;
+  padding: 50px 0 40px;
+  background-image: url(../images/bg_footer_1.png), url(../images/bg_footer_2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 110% 0, -10% -70%;
+
+}
+
+#footer-nav-links {
+  margin: 30px 0;
+}
+
+#footer-nav-links a {
+  color: #555555;
+  margin-left: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#newsletter .input-group .form-control {
+  display: inline-block;
+  max-width: 40%;
+}
+
+#newsletter .input-group {
+  justify-content: center;
+}
+
+#footer-nav #newsletter {
+  border-top: 1px solid #292929;
+}
+
+#footer-nav form label {
+  margin: 27px 0 16px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #555555;
+}
+
+.custom-btn-primary2 {
+  color: #000;
+  background-color: #F8AD47;
+  border-color: #F8AD47;
+}
+
+.custom-btn-primary2:hover,
+.custom-btn-primary2:active,
+.custom-btn-primary2:focus,
+.custom-btn-primary2:active:focus,
+.custom-btn-primary2:active:hover {
+  background-color: #b86d07;
+  border-color: #b86d07;
+  color: #000;
+}
+
+#newsletter form input {
+  background-color: #313131;
+  opacity: 0.6;
+  height: 38px;
+  border: none;
+}
+
+#newsletter form button {
+  border-radius: 0px;
+  /* note if i want to change the border radius only for top left */
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 6px 12px 5px;
+  font-size: 14px;
+  color: inherit;
+}
+
+.footer-copyright-social {
+  background-color: #151515;
+  color: #303030;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
+#social-icons a {
+  color: #303030;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.custom-navbar .navbar-header #btn-shoppingcart2 {
+  display: none;
+}
+
+@media(max-width:1199px) {
+  .custom-navbar .container .navbar-nav .nav-link {
+    padding: 8px;
   }
-} */
+}
+
+
+
+
+@media(max-width:991px) {
+  .navbar-header {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar-header .navbar-toggler {
+    float: right;
+
+  }
+
+  nav .navbar-collapse .navbar-nav .checkout {
+    display: none;
+  }
+
+  .custom-navbar .navbar-header #btn-shoppingcart2 {
+    display: block;
+    top: 0;
+    float: right;
+  }
+
+  .custom-btn {
+    margin-top: 10px;
+  }
+
+  .dropdown.categories .dropdown-toggle {
+    margin-top: 0;
+  }
+
+  nav.navbar .form-inline,
+  .form-group {
+    width: 100%;
+  }
+
+  nav.navbar .form-inline .custom-form-control {
+    width: 50%;
+  }
+
+  .custom-navbar a.btn-icon,
+  .custom-navbar button.btn-icon {
+    padding: 5px 10px 4px;
+  }
+}
+
+@media(max-width:767px) {
+
+  #carousel-featured,
+  #carousel-featured .product-details {
+    height: auto;
+  }
+
+  #carousel-featured .product-details {
+    position: static;
+  }
+
+  #carousel-featured {
+    padding-bottom: 10px;
+  }
+
+  #carousel-featured .carousel-item img {
+    height: 250px;
+  }
+
+  #carousel-featured .carousel-indicators {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-navbar .form-group {
+    display: flex;
+    margin: 0 10px;
+  }
+
+  .form-inline .custom-form-control {
+    width: 60%;
+  }
+
+  .form-inline .search-btn {
+    width: 10%;
+    padding: 5px 5px;
+    font-size: 12px;
+  }
+}
