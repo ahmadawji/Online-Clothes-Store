@@ -623,7 +623,31 @@ h3.custom-heading {
   .custom-navbar button.btn-icon {
     padding: 5px 10px 4px;
   }
+
+  .custom-thumbnail .overlay {
+    display: none;
+  }
+
+  .custom-thumbnail .add-to-cart-btn {
+    background-color: #fff;
+    color: #868686;
+    font-weight: normal;
+  }
+
+
+  #carousel-most-sold .carousel-item .card-body img {
+    height: 200px;
+  }
+
+  #copyright,
+  #social-icons {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
+
+
 
 @media(max-width:767px) {
 
@@ -646,6 +670,16 @@ h3.custom-heading {
 
   #carousel-featured .carousel-indicators {
     display: none;
+  }
+
+  #brand-logos .img-container img {
+    max-height: 50px;
+    max-width: 50px;
+    margin: 5px 24px 5px 23px;
+  }
+
+  #newsletter .input-group .form-control {
+    max-width: 60%;
   }
 }
 
