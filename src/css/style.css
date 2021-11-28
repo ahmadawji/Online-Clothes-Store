@@ -502,7 +502,7 @@ h3.custom-heading {
 
 #newsletter .input-group .form-control {
   display: inline-block;
-  max-width: 40%;
+
 }
 
 #newsletter .input-group {
@@ -697,5 +697,9 @@ h3.custom-heading {
     width: 10%;
     padding: 5px 5px;
     font-size: 12px;
+  }
+
+  #footer-nav {
+    background-image: url(../images/bg_footer_1.png);
   }
 }
